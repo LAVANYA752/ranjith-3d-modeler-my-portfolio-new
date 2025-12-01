@@ -57,7 +57,7 @@ All colors MUST be HSL.
   }
 }
 
-@layer utilities {
+/* @layer utilities {
   .text-glow {
     text-shadow: var(--glow-cyan);
   }
@@ -69,5 +69,33 @@ All colors MUST be HSL.
   .card-hover:hover {
     transform: translateY(-8px);
     box-shadow: var(--glow-cyan);
+  }
+} */
+
+@layer utilities {
+  .masonry-grid {
+    column-count: 1;
+    column-gap: 1.5rem;
+  }
+  
+  .masonry-grid-item {
+    break-inside: avoid;
+    margin-bottom: 1.5rem;
+  }
+  
+  @media (min-width: 640px) {
+    .masonry-grid {
+      column-count: 2;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .masonry-grid {
+      column-count: 3;
+    }
+  }
+
+  .image-hover-effect {
+    @apply transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_0_30px_hsl(38_92%_50%/0.2)];
   }
 }

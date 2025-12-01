@@ -1,11 +1,9 @@
-import Hero from "@/components/Hero";
-import ProjectGallery from "@/components/ProjectGallery";
 
+import Home from "@/components/Home";
 const Index = () => {
   return (
     <div className="min-h-screen">
-      <Hero />
-      <ProjectGallery />
+      <Home />
     </div>
   );
 };
