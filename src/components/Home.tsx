@@ -26,6 +26,7 @@ const Home = () => {
           Crafting immersive 3D environments and photorealistic visualizations that bring imagination to life
         </p>
       </section>
+      
 
       {/* Category Sections */}
       {categories.map((category, index) => {
